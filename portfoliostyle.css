@@ -1,0 +1,39 @@
+.mygrid {
+    width: 600px;
+    display: grid;
+    margin: 10px auto;
+    
+    
+    grid-gap: 20px;
+    
+    
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 40px 1fr;
+    grid-template-areas: "name about"
+                         "cos projects";
+}
+.name {
+    grid-area: name;
+    margin-right:300px;
+    padding: 30px;
+background: blue;}
+    }
+about{
+    grid-area:about;
+    
+}
+projects{
+    grid-area:projects;
+}
+
+}
+    
+}
+
+.mygrid:hover {
+    opacity: 0.2;
+}
+
+.mygrid>* {
+    border: 1px dashed blue;
+}
